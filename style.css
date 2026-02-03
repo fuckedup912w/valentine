@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffeef2;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#noBtn {
+    position: absolute; /* Needed for the "runaway" effect */
+    transition: 0.3s ease;
+}
+
+.photo-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#valentinePhoto {
+    width: 250px;           /* Adjust size as needed */
+    height: 250px;
+    object-fit: cover;      /* Keeps the photo from looking squashed */
+    border-radius: 15px;    /* Rounded corners */
+    border: 5px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    animation: popIn 0.5s ease-out; /* Optional pop-in effect */
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
